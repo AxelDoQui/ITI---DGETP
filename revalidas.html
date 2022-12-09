@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ITI - DGETP</title>
+    <!--     Estilos -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/embed.css">
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Mobile version -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Barra de Navegación -->
+    <nav>
+        <div class="logo">
+            <a href="../index.html"><img src="/img/ITI.png" alt="" /></a>
+        </div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn" />
+        <ul>
+            <li>
+                <label for="btn-1" class="show">Institucional +</label>
+                <a href="#">Institucional</a>
+                <input type="checkbox" id="btn-1" />
+                <ul>
+                    <li><a href="/php/estatutos.html">Estatutos</a></li>
+                    <li><a href="/php/consejoP.html">Consejo de Participación</a></li>
+                    <li><a href="/php/comision.html">Comisión Fomento</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-3" class="show">Estudiantes +</label>
+                <a href="#">Estudiantes</a>
+                <input type="checkbox" id="btn-3" />
+                <ul>
+                    <li><a href="/php/revalidas.html">Revalidas</a></li>
+                    <li><a href="/php/pasajeG.html">Pasaje de Grado</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1MrnKH9BNaFB2ZONqXHVffdUW-_uGYaRI"
+                            target="_blank">Prueba de Suficiencia de
+                            Íngles</a></li>
+                </ul>
+            </li>
+            <li>
+                <!-- <label for="btn-4" class="show">Programas +</label> -->
+                <a href="/php/programas.html">Programas</a>
+                <input type="checkbox" id="btn-4" />
+            </li>
+            <li>
+                <!-- <label class="show">Biblioteca</label> -->
+                <a href="#">Biblioteca</a>
+            </li>
+            <li>
+                <!-- <label class="show">Contacto</label> -->
+                <a href="/php/contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+</head>
+
+<!-- Contenido -->
+
+<div class="cuerpo">
+
+    <div class="titulo">
+        <header style="text-decoration:underline ;">Revalidas</header>
+    </div>
+
+    <div class="revalidas">
+        <article class="pdf2">
+            <h2 class="titulo-tarjeta">Revalida Nacional</h2>
+            <embed src="/pdf/Estatuto_del_estudiante_de_educaion_media.pdf" type="application/pdf" width="100%"
+                height="85%">
+            <a href="https://www.utu.edu.uy/sites/www.utu.edu.uy/files/normativa/archivos/estatuto-del-estudiante-de-educacion-media.pdf"
+                target="_blank" class="enlace-tarjeta">Ver Más</a>
+        </article>
+        <article class="pdf2">
+            <h2 class="titulo-tarjeta">Revalida Internacional</h2>
+            <embed src="/pdf/Estatuto_del_funcionario_docente.pdf" type="application/pdf" width="100%" height="85%">
+            <a href="https://www.utu.edu.uy/sites/www.utu.edu.uy/files/normativa/archivos/estatuto-del-funcionario-docente_actualizado-a-2015-08_0.pdf"
+                target="_blank" class="enlace-tarjeta">Ver Más</a>
+        </article>
+    </div>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="footer-descripcion">
+        <p>Instituto Tecnol&oacute;gico de Inform&aacute;tica</p>
+        <p>Durazno 1328 | Entre Ejido y Aquiles R. Lanza | Montevideo, Uruguay</p>
+        <article class="tarjeta">
+            <p>Teléfono: (+598) 2-901-2257</p>
+        </article>
+        <article class="tarjeta">
+            <p>Fax: (+598) 2-902-7144 Int.13</p>
+        </article>
+    </div>
+    <div class="footer-creador-info">
+        <p>Software made by <a href="#">Axel Dominguez</a> | Copyright &copy; 2022 </p>
+    </div>
+</footer>
+
+<!-- Script Responsive -->
+
+<script>
+    $('.icon').click(function () {
+        $('span').toggleClass("cancel");
+    });
+</script>
+</body>
+
+</html>
